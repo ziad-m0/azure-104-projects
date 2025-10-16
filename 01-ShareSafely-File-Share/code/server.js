@@ -1,19 +1,4 @@
-/**
- * ShareSafely - Secure File Sharing Application
- * 
- * This application allows users to upload files to Azure Blob Storage
- * and generates time-limited SAS (Shared Access Signature) URLs for secure sharing.
- * 
- * Security Features:
- * - Uses Managed Identity (no hardcoded credentials)
- * - Generates User Delegation SAS tokens (Azure AD-based, most secure)
- * - Time-limited access to uploaded files
- * - Proper error handling and logging
- * 
- * References:
- * - https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-javascript
- * - https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-create-user-delegation-sas-javascript
- */
+
 
 require('dotenv').config();
 const express = require('express');

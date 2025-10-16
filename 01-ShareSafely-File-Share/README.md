@@ -6,14 +6,6 @@ The architecture uses a **Service Endpoint** to create a secure, optimized conne
 
 ---
 
-## Architecture Diagram
-
-The application uses a network-hardened architecture to secure the storage account's public endpoint. All write traffic from the backend application is routed through a secure Service Endpoint, while administrative and public read access is controlled by a firewall.
-
-![Architecture Diagram](./docs/architecture-diagram.png)
-
----
-
 ## Azure Services Used
 
 * **Azure App Service:** Hosts the Node.js backend application.
@@ -38,8 +30,11 @@ The application uses a network-hardened architecture to secure the storage accou
 
 ## Technical Proof (Screenshots)
 
-| VNet Integration | Storage Firewall | IAM Role Assignments |
-| :---: | :---: | :---: |
-| ![VNet Integration](./docs/vnet-integration.png) | ![Storage Firewall](./docs/storage-network-access.png) | ![IAM Roles](./docs/iam-roles.png) |
+This section provides visual proof of the configuration and successful operation of the application and its underlying Azure infrastructure.
 
----
+| Successful Upload | VNet Integration | Storage Firewall |
+| :---: | :---: | :---: |
+| ![WebApp Success](./docs/screenshot-webapp.png) | ![VNet Integration](./docs/vnet-integration.png) | ![Storage Firewall](./docs/storage-network-access.png) |
+| **IAM Role Assignments** | **Files in Container** | **Project Resource Group** |
+| :---: | :---: | :---: |
+| ![IAM Roles](./docs/iam-roles.png) | ![Container Files](./docs/container-files.png) | ![Resource Group](./docs/rg-sharesafely.png) |

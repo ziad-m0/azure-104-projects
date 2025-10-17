@@ -1,0 +1,9 @@
+
+*.log
+.azure/
+
+
+*.json
+
+
+.vscode/

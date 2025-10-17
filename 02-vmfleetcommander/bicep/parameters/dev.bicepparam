@@ -1,0 +1,11 @@
+using '../main.bicep'
+
+param environment = 'dev'
+param location = 'uksouth'
+param projectName = 'vmproject'
+param adminUsername = 'azureuser'
+param vmSize = 'Standard_B1s'
+param vmCount = 1
+param allowedSourceIp = '154.239.29.87/32'
+param sshPublicKey = 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDXYOL6r1NlDmkqVGswIa4Y0a6adaZvmxBnsZeqAck+6zOWXF6VzOpyLfbCana897wW4qhhQIC8VBEchH7RAU2agwHTB/JDNv8ncjCuHL0szJCxXJmxuykyl5XjFhEwJzyt6h5ue9Kspub43TmFSJp2tNx8K2W0nVIqECSnG1zhxYd2GZJac2bgp9rShYkc2S3WCrxyFAWWCZlEGvSqFa7cUWIfuh3ejb5TD9fkcp4nbZsQcyFNFi8HLFiiIMC3tqH9FM2DzG6Rj1DaF2ihQD3PNQIisJZRVz1KDajroNS8gcwZV9gJyrVQIKHqOmB/u4dHRtIotjw+vnTdwsJIFfvbOs9s5PLL4MNhZBScC6cMcKPF17C5VIe4VYkcIggBWWDy32FzZ2EqwVApcS8bT/dC62fWJ/QRM/jBRrxQ0BH2wYEUa9Bs6pTU5U6v0boJqznL8te8K9e84QiF6+EJn1DH72nZiIAe4kFg/DHy2EXhuU/lyaJA2i9aER6qKoqybnt04l504boRx+/XfFfF1kdNPm3wmt6KzyEeazjjBHHA38qaOdHNrHnb7n43f9w8uhhniXzz1R05EqGj06gszTYbUpjN5sDHbBDQTo4ZvKjghYLxecvsz7MM0e9YlsczOIjzhSWFIM4wnpcY1opGoiuoHxIpTwEtINcKt9WbOsY29Q== azureuser@vm-fleet-commander'
+
